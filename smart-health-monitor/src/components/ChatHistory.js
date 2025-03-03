@@ -10,10 +10,11 @@ function ChatHistory({ messages }) {
             message.sender === "Bedrock" ? "bedrock-message" : "user-message"
           }`}
         >
-          {message.sender === "Bedrock" && <strong>Bedrock: </strong>}
-          {message.sender === "User" && <strong>User: </strong>}
-          {message.content}
-        </div>
+         {message.role === "assistant" && <strong>Assistant: </strong>}
+          {message.role === "user"}
+          <strong>You: </strong>
+          {message.text}
+         </div>
       ))}
     </div>
   );
