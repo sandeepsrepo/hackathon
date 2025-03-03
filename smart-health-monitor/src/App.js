@@ -49,7 +49,7 @@ function App() {
       };
 
       const response = await axios.post(
-        "https://6wj4r38msb.execute-api.us-west-2.amazonaws.com/default/submit-symptoms",
+        "https://spghdpwhv7.execute-api.us-west-2.amazonaws.com/default/submit-symptoms",
         payload,
         { headers: { "Content-Type": "application/json" } }
       );
@@ -73,7 +73,7 @@ function App() {
       };
 
       const response = await axios.post(
-        "https://nhwl24b7le.execute-api.us-west-2.amazonaws.com/default/start-conversation",
+        "https://trnnkgtede.execute-api.us-west-2.amazonaws.com/default/start-conversation",
         payload,
         { headers: { "Content-Type": "application/json" } }
       );
